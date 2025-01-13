@@ -27,4 +27,9 @@ public partial class MainWindow : Window
         string namn = txbNamn.Text;
         MessageBox.Show($"Hej {namn}");
     }
+
+    private void (object sender, RoutedEventArgs e)
+    {
+        
+    }
 }

@@ -7,6 +7,6 @@
 			"\t$2",
 			"}"
 		],
-		"description": "Metod för att fånga event från XAML"
+		"description": "Metod för att fånga event från XAML."
 	}
 }

@@ -8,9 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Xml;
 
-namespace XamlIntro;
+namespace WPFIntro;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -22,9 +21,8 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void KlickSpara(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
-        string namn = txbNamn.Text;
-        MessageBox.Show($"Hej {namn}");
+        MessageBox.Show("Hello, World!");
     }
 }

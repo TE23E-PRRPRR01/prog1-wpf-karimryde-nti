@@ -15,9 +15,4 @@
         <TextBox Margin="5" Name="txbNamn"></TextBox>
         <Button Margin="5" Click="KlickSpara">Spara</Button>
     </StackPanel>
-    <StackPanel>
-        <Label></Label>
-        <TextBox Name="tbxNamn"></TextBox>
-        <Button Click=""></Button>
-    </StackPanel>
 </Window>

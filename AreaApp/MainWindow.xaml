@@ -19,7 +19,7 @@
         <TextBox Name="txbHöjd" Padding="5"></TextBox>
         
         <Button Click="KlickRäkna" Padding="10" Margin="0 10 0 10">Räkna ut!</Button>
-        <Button Click="KlickRensa">Rensa</Button>
+        <Button Click="KlickRensa" Padding="10">Rensa</Button>
 
         <Label>Resultat</Label>
         <TextBox Name="txbResultat" Padding="5"></TextBox>

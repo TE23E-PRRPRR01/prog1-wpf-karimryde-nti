@@ -74,6 +74,7 @@ public partial class MainWindow : Window
     private void KlickVisaFacit(object sender, RoutedEventArgs e)
     {
         txbResultat.Text = $"Rätt svar är {slumptal}";
+        
     }
 
     private void KlickVisaGissningar(object sender, RoutedEventArgs e)
@@ -88,13 +89,15 @@ public partial class MainWindow : Window
 
     private void KlickSpelaIgen(object sender, RoutedEventArgs e)
     {
+        // Slumpa ett nytt tal
         slumptal = Random.Shared.Next(1, 1001);
 
+        // Töm listan
         listaGissningar = [];
 
         // Rensa gränssnittet
         txbGissning.Text = "";
-        txbResultat.Text = ";"
+        txbResultat.Text = "";
         txbGissningar.Text = "";
     }
 }

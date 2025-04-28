@@ -1,0 +1,40 @@
+﻿<Window x:Class="KalkApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KalkApp"
+        mc:Ignorable="d"
+        Title="KalAppen" Height="450" Width="800"
+        SizeToContent="WidthAndHeight" Background="#EEE">
+        <StackPanel Margin="10">
+            <Label FontSize="24">Kalkylator</Label>
+            <Label Margin="5">Ange två tal och välj operation:</Label>
+    
+            <!-- Tal 1 -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Width="100">Tal 1:</Label>
+                <TextBox Name="txbTal1" Width="200"></TextBox>
+            </StackPanel>
+    
+            <!-- Tal 2 -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Width="100">Tal 2:</Label>
+                <TextBox Name="txbTal2" Width="200"></TextBox>
+            </StackPanel>
+    
+            <!-- Knappar för operationer -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+                <Button Width="50" Height="30" Margin="5,0" Click="KlickPlus">+</Button>
+                <Button Width="50" Height="30" Margin="5,0" Click="KlickMinus">-</Button>
+                <Button Width="50" Height="30" Margin="5,0" Click="KlickGånger">*</Button>
+                <Button Width="50" Height="30" Margin="5,0" Click="KlickDelat">/</Button>
+            </StackPanel>
+    
+            <!-- Resultat -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Resultat:</Label>
+                <TextBox Name="txbResult" Width="200" IsReadOnly="True"></TextBox>
+            </StackPanel>
+        </StackPanel>
+    </Window>
